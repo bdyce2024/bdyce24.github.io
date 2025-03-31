@@ -1,6 +1,4 @@
-# Baldwin Dyce - Applied Data Science Portfolio
-
-![Profile Banner](https://via.placeholder.com/800x200.png?text=Baldwin+Dyce+-+Applied+Data+Science+Portfolio)
+<h1 style="color: blue;">Baldwin Dyce - Applied Data Science Portfolio</h1>
 
 ## DSC 450: Applied Data Science
 
@@ -32,5 +30,6 @@ Greetings! My name is Baldwin, and I am a junior data scientist with a passion f
 
 > "Data is the new oil, and just like oil, it needs to be refined to be valuable." - Unknown
 
+![Footer Image](https://via.placeholder.com/800x100.png?text=Explore+My+Projects)
 ![Footer Image](https://via.placeholder.com/800x100.png?text=Explore+My+Projects)
 
