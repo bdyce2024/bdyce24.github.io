@@ -1,27 +1,36 @@
 # Baldwin Dyce - Applied Data Science Portfolio
+
+![Profile Banner](https://via.placeholder.com/800x200.png?text=Baldwin+Dyce+-+Applied+Data+Science+Portfolio)
+
 ## DSC 450: Applied Data Science
 
-## Bio:
-### Greetings! My name is Baldwin, and I am a junior data scientist with a passion for data-driven storytelling. My background includes experience in creating projects in an academic environment. I’ve worked on a variety of projects including building predictive models for customer behavior and analyzing large datasets to uncover patterns and insights. 
+### Bio
+Greetings! My name is Baldwin, and I am a junior data scientist with a passion for data-driven storytelling. My background includes experience in creating projects in an academic environment.
 
-## Skills/Proficiencies: 
-## •	Programming (Python, R, SAS, SQL) 
-## •	Statistics and Probability 
-## •	Data wrangling and database management 
-## •	Data Visualization 
-## •	Machine Learning and deep learning 
-## •	Cloud computing 
-## •	Interpersonal skills (active listening, effective communication, public speaking) 
-## •	Management/leadership 
+### Skills & Proficiencies
+- **Programming:** Python, R, SAS, SQL
+- **Statistics and Probability**
+- **Data Wrangling and Database Management**
+- **Data Visualization**
+- **Machine Learning and Deep Learning**
+- **Cloud Computing**
+- **Interpersonal Skills:** Active Listening, Effective Communication, Public Speaking
+- **Management/Leadership**
 
-## Upcoming Projects:
-## •	Project 1: Churn Prediction in Telcom using Machine Learning Classification 
-## •	Project 2: Bank Client Satisfaction Sentiment Analysis using NLP
-## •	Project 3: Fake News Detection using Python and Machine Learning
+### Upcoming Projects
+1. **Churn Prediction in Telcom**: Using Machine Learning Classification
+2. **Bank Client Satisfaction Sentiment Analysis**: Using NLP
+3. **Fake News Detection**: Using Python and Machine Learning
 
-## Contact Information:
-## Email: bdyce@my365.bellevue.edu
+### Contact Information
+- **Email:** [bdyce@my365.bellevue.edu](mailto:bdyce@my365.bellevue.edu)
 
-## Social Media Account:
-## www.linkedin.com/in/baldwin-dyce-m-s-73056424
+### Connect with Me
+- **LinkedIn:** [Baldwin Dyce, M.S.](https://www.linkedin.com/in/baldwin-dyce-m-s-73056424)
+
+---
+
+> "Data is the new oil, and just like oil, it needs to be refined to be valuable." - Unknown
+
+![Footer Image](https://via.placeholder.com/800x100.png?text=Explore+My+Projects)
 
