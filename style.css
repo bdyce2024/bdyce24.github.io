@@ -11,3 +11,6 @@
     object-fit: cover;
     border: 3px solid #3498db;
 }
+.bio {
+    align-self: center;
+}
