@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Baldwin Dyce - Junior Data Scientist</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Predicting Default Credit Case Study</h1>
+
+<p>Welcome to the <strong>Predicting Default Credit Case Study</strong> repository! This project explores the application of machine learning techniques to predict serious credit delinquency, enabling financial institutions to better assess risk and make informed lending decisions.</p>
+
+<hr>
+
+<h2>Introduction</h2>
+
+<p>Financial institutions face substantial risk when clients default on their obligations. Using a dataset of European credit card transactions, this project aims to build predictive models that identify customers at high risk of serious delinquency (over 90 days overdue) within the next two years. The dataset is highly imbalanced, with fraud cases constituting only 0.172% of all transactions.</p>
+
+<hr>
+
+<h2>Business Problem &amp; Hypothesis</h2>
+
+<p>Banks rely heavily on loan repayments for revenue. Accurately identifying borrowers likely to default allows banks to mitigate risk and refine lending practices. We hypothesize that a borrower's likelihood of serious delinquency can be effectively predicted using demographic and financial history data.</p>
+
+<hr>
+
+<h2>Methods &amp; Analysis</h2>
+
+<ul>
+  <li><strong>Dataset Overview</strong>: The dataset includes demographic details (age, income, dependents) and credit usage metrics (debt-to-income ratio, credit utilization, delinquency counts).</li>
+  <li><strong>Data Cleaning</strong>: Addressed missing values, capped outliers, and removed inconsistent entries to ensure data quality.</li>
+  <li><strong>Exploratory Data Analysis (EDA)</strong>: Identified skewness and class imbalance, motivating data transformations and balancing techniques.</li>
+  <li><strong>Feature Engineering</strong>: Created composite indicators, balanced the dataset using up/down-sampling and SMOTE, and applied Box-Cox transformations and scaling for normalization.</li>
+  <li><strong>Model Building</strong>: Evaluated multiple supervised classifiers—including logistic regression, decision trees, Random Forest, CatBoost, and neural networks—using precision, recall, F1 score, and ROC-AUC. Hyperparameters were optimized via stratified cross-validation, and decision thresholds were tuned for optimal performance.</li>
+</ul>
+
+<hr>
+
+<h2>Results</h2>
+
+<ul>
+  <li><strong>Random Forest</strong> and <strong>CatBoost</strong> emerged as the top-performing models.
+    <ul>
+      <li>Random Forest provided a robust, interpretable baseline, highlighting features like combined past-due counts and credit loans.</li>
+      <li>CatBoost handled class imbalance effectively and identified nuanced predictors such as revolving credit utilization.</li>
+    </ul>
+  </li>
+  <li><strong>Interpretability</strong>: SHAP and LIME analyses revealed that credit-line usage and delinquency history are the most influential predictors, while features like income and living situation had lesser impact.</li>
+  <li><strong>Performance Metrics</strong>:
+    <ul>
+      <li>Random Forest: Macro F1 Score ≈ 59.6%, Micro F1 Score ≈ 93.5%</li>
+      <li>CatBoost: Macro F1 Score ≈ 64.8%, Micro F1 Score ≈ 85.9%</li>
+    </ul>
+  </li>
+  <li><strong>Key Insights</strong>: Middle-aged borrowers are generally less risky, and a clean payment history significantly reduces default risk, though low income and youth can still elevate risk.</li>
+</ul>
+
+<hr>
+
+<h2>Recommendations &amp; Ethical Considerations</h2>
+
+<ul>
+  <li><strong>Business Use</strong>: Deploy the model to flag high-risk applicants and design early intervention strategies.</li>
+  <li><strong>Ethical Use</strong>: Ensure transparency, avoid discriminatory biases, and use interpretability tools (SHAP/LIME) to explain decisions to stakeholders and regulators.</li>
+  <li><strong>Model Maintenance</strong>: Regularly audit and update the model to maintain fairness and accuracy as credit practices evolve.</li>
+</ul>
+
+<hr>
+
+<h2>Conclusion</h2>
+
+<p>This case study demonstrates how machine learning, combined with careful data preprocessing and interpretability, can support banks in reducing loan defaults and fostering financial stability.</p>
+
+<h2>Link</h2>
+    <p><a href="../SrcProjects/Grp1_Project3.ipynb">Project3 Link</a></p>
+
+</body>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Baldwin Dyce - Junior Data Scientist</title>
+    <link rel="stylesheet" href="projectone.css" />
+</head>
+<body>
+    <h2>Project Overview</h2>
+    <p>Customer churn—the rate at which customers stop using a company's services—is a critical metric for telecommunication businesses. High churn can significantly impact revenue and growth.</p>
+    <p>By leveraging machine learning, this project aims to:</p>
+    <ul>
+        <li>Predict if a customer will churn</li>
+        <li>Classify the churn category (e.g., service, price, support)</li>
+        <li>Identify the specific churn reason (e.g., network issues, billing disputes)</li>
+    </ul>
+    <p>This <strong>multi-level approach</strong> enables proactive intervention and improved customer retention.</p>
+
+    <hr>
+
+    <h2>Business Impact</h2>
+    <ul>
+        <li><strong>Increase Revenue</strong>: Retaining customers reduces lost revenue and the need for costly acquisition campaigns.</li>
+        <li><strong>Optimize Acquisition Costs</strong>: Preventing churn lowers the cost per customer by reducing the need to win back lost users.</li>
+        <li><strong>Enhance Customer Satisfaction</strong>: Understanding churn drivers allows for targeted improvements in service and customer experience.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Project Approach</h2>
+
+    <h3>1. Data Exploration & Preprocessing</h3>
+    <ul>
+        <li><strong>EDA</strong>: Understand data distribution, missing values, and feature relevance.</li>
+        <li><strong>Missing Data Handling</strong>: Drop or impute values as appropriate.</li>
+        <li><strong>Feature Engineering</strong>:
+            <ul>
+                <li>Remove irrelevant IDs and columns</li>
+                <li>Encode categorical variables using label encoding (to avoid dimensionality explosion)</li>
+                <li>Balance dataset with SMOTE or undersampling</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>2. Problem Formulation</h3>
+    <ul>
+        <li><strong>Multi-class Classification</strong>: Predict the churn category (e.g., "Not Applicable" for non-churners).</li>
+        <li><strong>Multi-label Classification</strong>: Predict both the churn category and churn reason (as customers may have multiple reasons).</li>
+    </ul>
+
+    <h3>3. Model Selection</h3>
+    <ul>
+        <li><strong>Baseline Models</strong>: Decision Trees, Logistic Regression</li>
+        <li><strong>Ensemble Methods</strong>: Random Forest, Bagging, Boosting (e.g., XGBoost)</li>
+        <li><strong>Deep Learning</strong>: MLP (Multi-layer Perceptron) using Keras/TensorFlow for complex patterns</li>
+    </ul>
+
+    <h3>4. Model Training & Evaluation</h3>
+    <ul>
+        <li><strong>Supervised Learning</strong>: Trained on labeled historical customer data</li>
+        <li><strong>Evaluation Metrics</strong>:
+            <ul>
+                <li>F1-score, Recall, Precision</li>
+                <li>Confusion Matrix, ROC AUC</li>
+                <li>Emphasis on <strong>F1-score and Recall</strong> due to class imbalance</li>
+            </ul>
+        </li>
+        <li><strong>Avoid Data Leakage</strong>: All preprocessing is split between training and test datasets.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Key Concepts</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Task Type</th>
+                <th>Description</th>
+                <th>Example Algorithms</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Multi-class Classification</td>
+                <td>Assigns one label from multiple possible categories to each instance</td>
+                <td>Logistic Regression, RF</td>
+            </tr>
+            <tr>
+                <td>Multi-label Classification</td>
+                <td>Assigns multiple labels (e.g., churn category & reason) to each instance</td>
+                <td>Neural Networks, Ensemble</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Workflow Summary</h2>
+    <ol>
+        <li><strong>Data Exploration</strong>: Visualize and analyze the dataset</li>
+        <li><strong>Preprocessing</strong>: Clean data, encode features, balance classes</li>
+        <li><strong>Modeling</strong>: Train & tune models for classification tasks</li>
+        <li><strong>Evaluation</strong>: Assess models using business-prioritized metrics</li>
+        <li><strong>Deployment</strong> (optional): Package best model for integration</li>
+    </ol>
+
+    <hr>
+
+    <h2>Tools & Libraries</h2>
+    <ul>
+        <li><strong>Python</strong>: Primary language</li>
+        <li><strong>Pandas, NumPy</strong>: Data manipulation</li>
+        <li><strong>Scikit-learn</strong>: ML models and evaluation</li>
+        <li><strong>Imbalanced-learn</strong>: SMOTE and undersampling</li>
+        <li><strong>Keras / TensorFlow</strong>: Deep learning</li>
+        <li><strong>Matplotlib / Seaborn</strong>: Visualization</li>
+    </ul>
+
+    <hr>
+
+    <h2>Conclusion</h2>
+    <p>This project provides a robust ML framework for telecom companies to predict customer churn at multiple levels, offering actionable insights into churn likelihood, category, and reasons. By adopting this strategy, businesses can reduce churn, enhance customer satisfaction, and drive sustainable growth.</p>
+
+    <hr>
+
+    <h2>Ethical Considerations</h2>
+    <ul>
+        <li>Balanced the dataset to prevent majority class bias.</li>
+        <li>Monitored feature importances to avoid unfair targeting based on protected attributes.</li>
+        <li>Focused on interpretable models to enable transparent business decisions.</li>
+    </ul>
+
+    <h2>Link</h2>
+    <p><a href="../SrcProjects/Grp1_Project1.ipynb">Project1 Link</a></p>
+</body>

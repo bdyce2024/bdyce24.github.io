@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Baldwin Dyce - Junior Data Scientist</title>
+</head>
+<body>
+    <h1>Sales Forecasting Using Walmart Stores</h1>
+
+<p>Welcome to the repository for the project: <strong>Sales Forecasting Using Walmart Stores</strong>. This project leverages machine learning to improve sales forecasting accuracy for Walmart, supporting better inventory management, staffing, and operational efficiency across thousands of stores.</p>
+
+<hr>
+
+<h2>Overview</h2>
+
+<p>Sales forecasting is crucial for large retailers like Walmart, where accurate predictions help maintain optimal inventory, reduce costs, and enhance customer satisfaction. By applying data science and machine learning, we aim to uncover trends and patterns in historical sales data, integrate external factors (like weather and holidays), and generate precise weekly sales forecasts at the store and department level.</p>
+
+<hr>
+
+<h2>Business Problem & Hypothesis</h2>
+
+<p>Walmart operates over 10,000 stores in 24 countries, each affected by unique seasonal, promotional, and regional factors. Inaccurate forecasts can lead to overstocking (increased costs) or understocking (lost sales and dissatisfied customers). Our hypothesis: <strong>Integrating machine learning techniques with historical sales, holiday, promotion, and location data will significantly improve weekly sales forecast accuracy compared to traditional statistical methods</strong>.</p>
+
+<hr>
+
+<h2>Methods & Analysis</h2>
+
+<p>Our workflow included:</p>
+<ul>
+  <li><strong>Data Loading & Integration</strong>: Combined historical sales with store metadata, weather, promotions, and holiday calendars.</li>
+  <li><strong>Data Cleaning & Preprocessing</strong>: Converted data types, imputed missing values, removed duplicates, and ensured consistency.</li>
+  <li><strong>Exploratory Data Analysis (EDA)</strong>: Used visualizations (histograms, boxplots, heatmaps) to identify trends, correlations, and outliers.</li>
+  <li><strong>Feature Engineering</strong>: Created new features (week number, year, holiday flags, lagged sales) to capture seasonality and temporal effects.</li>
+  <li><strong>Data Splitting</strong>: Divided data into training and testing sets based on time, preventing data leakage.</li>
+  <li><strong>Model Training & Evaluation</strong>: Compared Linear Regression, Decision Tree, and Random Forest regressors using MAE and RMSE metrics.</li>
+  <li><strong>Prediction</strong>: Deployed the best-performing model (Random Forest) to forecast weekly sales on test data.</li>
+</ul>
+
+<hr>
+
+<h2>Results</h2>
+
+<ul>
+  <li><strong>Random Forest Regression</strong> outperformed other models, achieving the lowest RMSE and MAE on validation and test sets.</li>
+  <li>Visualizations showed strong alignment between predicted and actual sales, especially for larger stores.</li>
+  <li>Feature importance analysis highlighted store size, department, and temporal features as key predictors.</li>
+</ul>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>RMSE (Val)</th>
+      <th>MAE (Val)</th>
+      <th>RMSE (Test)</th>
+      <th>MAE (Test)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Linear Regression</td>
+      <td>7731.06</td>
+      <td>2829.84</td>
+      <td>5128.54</td>
+      <td>2514.60</td>
+    </tr>
+    <tr>
+      <td>Decision Tree</td>
+      <td>8490.61</td>
+      <td>2426.67</td>
+      <td>6109.89</td>
+      <td>2918.42</td>
+    </tr>
+    <tr>
+      <td>Random Forest</td>
+      <td>6082.37</td>
+      <td>1920.15</td>
+      <td>4221.75</td>
+      <td>2142.02</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Recommendations & Ethical Considerations</h2>
+
+<ul>
+  <li><strong>Model Maintenance</strong>: Retrain models regularly to adapt to changing sales patterns.</li>
+  <li><strong>Data Quality</strong>: Address outliers and missing values for robust predictions.</li>
+  <li><strong>Advanced Models</strong>: Explore time series models (e.g., ARIMA, Prophet) for further improvements.</li>
+  <li><strong>Ethics</strong>: Ensure human oversight in staffing decisions influenced by forecasts, and align improvements with sustainability goals (e.g., reducing waste).</li>
+</ul>
+
+<hr>
+
+<h2>Data Dictionary</h2>
+
+<p><strong>sales_data.csv</strong></p>
+<ul>
+  <li>Store: Store number (categorical)</li>
+  <li>Dept: Department number (categorical)</li>
+  <li>Date: Date of sales (datetime)</li>
+  <li>Weekly_Sales: Weekly sales (numerical, target)</li>
+  <li>IsHoliday: Holiday week flag (binary)</li>
+</ul>
+
+<p><strong>stores.csv</strong></p>
+<ul>
+  <li>Store: Store number (categorical)</li>
+  <li>Type: Store type (categorical)</li>
+  <li>Size: Store size in sq ft (numerical)</li>
+</ul>
+
+<p><strong>features.csv</strong></p>
+<ul>
+  <li>Store: Store number (categorical)</li>
+  <li>Date: Date (datetime)</li>
+  <li>Temperature, Fuel_Price, CPI, Unemployment: Regional indicators (numerical)</li>
+  <li>MarkDown1-5: Promotional markdowns (numerical)</li>
+  <li>IsHoliday: Holiday week flag (binary)</li>
+</ul>
+
+<hr>
+
+<h2>Conclusion</h2>
+
+<p>This project demonstrates the value of machine learning in retail sales forecasting, with Random Forest models providing significant accuracy gains. Ongoing model updates and ethical considerations are essential for sustained impact and responsible use.</p>
+
+<hr>
+
+<p><em>Explore the code, data, and notebooks in this repository to learn more about our approach and findings!</em></p>
+
+<h2>Link</h2>
+    <p><a href="../SrcProjects/Grp1_Project2.ipynb">Project2 Link</a></p>
+
+</body>
